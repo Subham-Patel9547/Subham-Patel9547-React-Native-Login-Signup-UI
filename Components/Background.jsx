@@ -17,9 +17,7 @@ export default function Background({children}) {
       />
       <View style={styles.absolute}>{children}</View>
 
-      <View style={styles.infomationContainer}>
-        <Text style={styles.textinfo}>Subham Patel | 7266896432</Text>
-      </View>
+      
     </View>
   );
 }
@@ -41,19 +39,5 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
 
-  infomationContainer: {
-    width: '90%',
-    position: 'absolute',
-    bottom: 5,
-    alignItems: 'center',
-    backgroundColor: darkGreen,
-    padding: 3,
-    borderRadius: 20,
-  },
-
-  textinfo: {
-    color: 'white',
-    fontSize: 15,
-    fontWeight: 'bold',
-  },
+ 
 });

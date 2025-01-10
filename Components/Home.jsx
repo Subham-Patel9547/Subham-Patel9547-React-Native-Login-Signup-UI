@@ -23,6 +23,9 @@ const Home = props => {
           press={() => props.navigation.navigate('Signup')}
         />
       </View>
+      <View style={styles.infomationContainer}>
+              <Text style={styles.textinfo}>Subham Patel | 7266896432</Text>
+            </View>
     </Background>
   );
 };
@@ -39,6 +42,21 @@ const styles = StyleSheet.create({
   subtitle: {
     marginTop: -20,
     marginBottom: 40,
+  },
+  infomationContainer: {
+    width: '100%',
+    marginTop:100,
+    alignItems: 'center',
+    backgroundColor: darkGreen,
+    padding: 3,
+    borderRadius: 20,
+  },
+
+  textinfo: {
+    color: 'white',
+    fontSize: 15,
+    fontWeight: 'bold',
+    letterSpacing:1
   },
 });
 
